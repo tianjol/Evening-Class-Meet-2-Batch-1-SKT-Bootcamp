@@ -28,6 +28,7 @@ function tambah(){
     todo.push(databaru);
 
     //update HTML
+    document.getElementById("data").innerHTML = '';
     todo.map((value,index)=>{
         console.log(value,"ini index", index);
         document.getElementById("data").innerHTML +=template(value.title,value.status,value.index);
