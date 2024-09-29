@@ -1,0 +1,30 @@
+@{layout('')}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webste Bootcamp</title>
+</head>
+<body>
+    <h1>Tes view</h1>
+</body>
+<script>
+    //console.log("ini global object", window);
+    const todo=[
+        {
+            nama: 'Membuat todo App',
+            status:'done',
+            tanggal:new Date()
+        }
+    ];
+    var dataSaya ={
+        name:'jilli',
+        age:17,
+        perkenalkan: function(){
+            console.log("nama saya ",this.name);
+        }
+    };
+    dataSaya.perkenalkan();
+</script>
+</html>
